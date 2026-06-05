@@ -219,6 +219,12 @@ img {
   width: 100%;
 }
 
+.section.section-band:not(.hero) > * {
+  width: min(100% - 32px, var(--max));
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero {
   min-height: calc(100vh - 72px);
   display: grid;
@@ -902,6 +908,10 @@ h3 {
   .section,
   .hero-inner,
   .footer {
+    width: min(100% - 24px, var(--max));
+  }
+
+  .section.section-band:not(.hero) > * {
     width: min(100% - 24px, var(--max));
   }
 
