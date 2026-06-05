@@ -4,15 +4,10 @@ const translations = {
     heroTitleA: "把企業策略",
     heroTitleB: "轉化為可落地的人才系統",
     heroLead:
-      "具備 20 年以上大型企業、管理顧問、行銷企劃、通路發展與人資轉型經驗。現任富邦人壽人力資源主管，長期投入績效管理、人才發展、接班梯隊、組織設計與 HR 數位化。",
+      "具備 20 年以上大型企業、管理顧問、行銷企劃、通路發展與人資轉型經驗。長期投入績效管理、人才發展、接班梯隊、組織設計與 HR 數位化。",
     viewImpact: "查看成就",
     emailMe: "聯絡我",
     emailReveal: "點擊顯示 Email",
-    orbitCenter: "人才系統",
-    orbitStrategy: "策略",
-    orbitTalent: "人才",
-    orbitData: "數據",
-    orbitCulture: "文化",
     positioningEyebrow: "Core Positioning",
     positioningTitle: "策略型人資與組織發展領導者",
     positioningText:
@@ -78,15 +73,10 @@ const translations = {
     heroTitleA: "Turning business strategy",
     heroTitleB: "into executable people systems",
     heroLead:
-      "Strategic HR and organization development leader with 20+ years of experience across large enterprises, management consulting, marketing, channel development, and HR transformation. Currently an HR leader at Fubon Life.",
+      "Strategic HR and organization development leader with 20+ years of experience across large enterprises, management consulting, marketing, channel development, and HR transformation.",
     viewImpact: "View impact",
     emailMe: "Contact me",
     emailReveal: "Click to reveal Email",
-    orbitCenter: "People Systems",
-    orbitStrategy: "Strategy",
-    orbitTalent: "Talent",
-    orbitData: "Data",
-    orbitCulture: "Culture",
     positioningEyebrow: "Core Positioning",
     positioningTitle: "Strategic HR and organization development leader",
     positioningText:

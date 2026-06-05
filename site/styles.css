@@ -355,6 +355,23 @@ h3 {
   padding: 24px;
 }
 
+.portrait-panel {
+  padding: 0;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: 520px;
+  background: #ffffff;
+}
+
+.profile-portrait {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  object-position: 50% 18%;
+  filter: contrast(1.02);
+}
+
 .profile-name {
   padding-bottom: 18px;
   margin-bottom: 18px;
@@ -373,100 +390,6 @@ h3 {
 .profile-name strong {
   font-size: 1.9rem;
   line-height: 1.1;
-}
-
-.system-orbit {
-  position: relative;
-  height: 214px;
-  margin: 20px 0 4px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--line) 42%, transparent) 1px, transparent 1px),
-    linear-gradient(color-mix(in srgb, var(--line) 42%, transparent) 1px, transparent 1px),
-    color-mix(in srgb, var(--surface-muted) 72%, var(--surface));
-  background-size: 38px 38px;
-  overflow: hidden;
-}
-
-.orbit-center,
-.orbit-node {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 34px;
-  padding: 0 12px;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--text);
-  font-size: 0.78rem;
-  font-weight: 850;
-  box-shadow: 0 10px 24px rgba(20, 38, 36, 0.08);
-  white-space: nowrap;
-}
-
-.orbit-center {
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-  min-height: 48px;
-  color: #ffffff;
-  background: var(--accent);
-  border-color: var(--accent);
-  transform: translate(-50%, -50%);
-}
-
-.orbit-node::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 0 0 color-mix(in srgb, var(--gold) 34%, transparent);
-  animation: nodePulse 4.8s ease-in-out infinite;
-}
-
-.node-strategy {
-  left: 18px;
-  top: 22px;
-}
-
-.node-talent {
-  right: 18px;
-  top: 34px;
-}
-
-.node-data {
-  left: 32px;
-  bottom: 26px;
-}
-
-.node-culture {
-  right: 24px;
-  bottom: 20px;
-}
-
-.orbit-line {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: 180px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0.42;
-  transform-origin: left center;
-}
-
-.orbit-line-a {
-  transform: rotate(28deg) translateX(-88px);
-  animation: lineBreath 5.8s ease-in-out infinite;
-}
-
-.orbit-line-b {
-  transform: rotate(-33deg) translateX(-88px);
-  animation: lineBreath 5.8s ease-in-out 1.2s infinite;
 }
 
 .profile-panel dl,
@@ -787,26 +710,6 @@ h3 {
   transition: opacity 520ms ease, transform 520ms ease;
 }
 
-@keyframes nodePulse {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 color-mix(in srgb, var(--gold) 34%, transparent);
-  }
-  45% {
-    box-shadow: 0 0 0 9px transparent;
-  }
-}
-
-@keyframes lineBreath {
-  0%,
-  100% {
-    opacity: 0.28;
-  }
-  50% {
-    opacity: 0.62;
-  }
-}
-
 @keyframes flowMove {
   to {
     background-position: 28px 0, 0 0;
@@ -885,8 +788,13 @@ h3 {
     max-width: 520px;
   }
 
-  .system-orbit {
-    max-width: 420px;
+  .portrait-panel {
+    width: min(100%, 420px);
+    min-height: 430px;
+  }
+
+  .profile-portrait {
+    min-height: 430px;
   }
 
   .strength-grid,
@@ -949,29 +857,13 @@ h3 {
     min-height: 118px;
   }
 
-  .system-orbit {
-    height: 190px;
+  .portrait-panel {
+    min-height: 360px;
   }
 
-  .orbit-node {
-    font-size: 0.72rem;
-    padding: 0 9px;
-  }
-
-  .node-strategy {
-    left: 12px;
-  }
-
-  .node-talent {
-    right: 12px;
-  }
-
-  .node-data {
-    left: 14px;
-  }
-
-  .node-culture {
-    right: 12px;
+  .profile-portrait {
+    min-height: 360px;
+    object-position: 50% 14%;
   }
 
   .flow-visual {
