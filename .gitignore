@@ -1,0 +1,22 @@
+# Publish only the sanitized GitHub Pages site by default.
+*
+
+!.gitignore
+!site/
+!site/**
+!.github/
+!.github/workflows/
+!.github/workflows/pages.yml
+
+# Keep local/macOS noise out even if ignore rules change later.
+.DS_Store
+**/.DS_Store
+
+# Never publish source CV material or generated resume artifacts from this workspace.
+*.docx
+*.pdf
+*.md
+rendered_profile*/
+rendered_tegh_profile*/
+roger_cv/
+tools/
